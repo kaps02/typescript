@@ -1,0 +1,15 @@
+# Ignore compiled JavaScript files
+*.js
+
+# Ignore TypeScript configuration files
+tsconfig.json
+tsconfig.tsbuildinfo
+
+# Ignore node_modules directory
+node_modules/
+
+# Ignore compiled output directory
+dist/
+
+# Ignore .env files containing sensitive information
+.env

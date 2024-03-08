@@ -1,10 +1,15 @@
-import express from 'express'
-import bodyParser from "body-parser"
+import express from 'express';
 import todoRoute from './routes/todos';
 
 const app = express();
 
-app.use(todoRoute);
-app.use(bodyParser);
+// Use built-in Express JSON parsing middleware
+app.use(express.json());
 
-app.listen(3000);
+// Use todo routes
+app.use(todoRoute);
+
+// Start the server
+app.listen(3000, () => {
+  console.log('Server is listening on port 3000');
+});

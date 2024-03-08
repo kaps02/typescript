@@ -8,6 +8,7 @@ tsconfig.tsbuildinfo
 # Ignore node_modules directory
 node_modules/
 
+
 # Ignore compiled output directory
 dist/
 
